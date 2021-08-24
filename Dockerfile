@@ -1,7 +1,9 @@
 FROM alpine:3
 
 RUN apk update && \
-    apk add openssh
+    apk add \
+    openssh \
+    zip
 
 RUN mkdir -p ~/.ssh && \
     chmod 700 ~/.ssh && \
